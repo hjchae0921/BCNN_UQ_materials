@@ -31,7 +31,7 @@ num_samples_hmc = 1000  # these are the number of samples from the weights poste
 # used for the prediction and plots before all the HMC samples have been completed
 num_samples_hmc_pred = 1000
 method = 'Deterministic'  # options: 'Deterministic', 'MCD', 'BBB', 'BBB_LRT', 'HMC'
-device = "cuda"
+device = "cpu"
 step_size = 0.0005
 L = 300  # number of steps per sample
 tau_out = 10000

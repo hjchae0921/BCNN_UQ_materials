@@ -160,6 +160,7 @@ cython_debug/
 #.idea/
 
 scripts/run_rockfish.sh
+scripts/slurm*
 data/*
 data/data_fiber/*
 data/data_fiber/X_tr_*
@@ -190,9 +191,8 @@ data/data_polycrystalline_2D/config*
 scripts/fiber_load_data_2.py
 scripts/run_rockfish.sh
 scripts/run_rockfish2.sh
-scritps/train_model_HMC.sh
 data2/
 figures2/
 scripts/data_generation_polycrystalline
-figures_*
-trained_models_*
+# figures_*
+# trained_models_*

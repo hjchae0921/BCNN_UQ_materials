@@ -48,8 +48,7 @@ For each system, different architecture and optimization parameters are used.
 1. Download the data and create a data/data_fiber folder
 2. Specify "fiber" in the config.json
 3. Specify the desired parameters in the configs files depending on the method being used
-4. git clone https://github.com/AdamCobb/hamiltorch HMC_torch
-3. python train_model to train the model  
+4. python train_model to train the model  
   3a. Deterministic 
   3b. MCD
   3c. BBB

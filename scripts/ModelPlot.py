@@ -2,21 +2,21 @@
 import numpy as np
 import os
 import matplotlib.pyplot as plt
-from matplotlib import rc
+plt.rcParams["text.usetex"] = False
+# from matplotlib import rc
 import pickle
 import fnmatch
 from utils.utils_process import construct_paths, load_test_data, get_filepath, save_tests, construct_fig_paths, construct_dir_path
-from skimage.metrics import structural_similarity as ssim
 from matplotlib import gridspec
 from ModelPredict import SampleNetworks
 import pandas as pd
 #%%
-rc('text', usetex=True)
-rc('font', size=14)
-rc('legend', fontsize=14)
-rc('text', usetex=True)
-rc('font', size=14)
-rc('legend', fontsize=14)
+# rc('text', usetex=True)
+# rc('font', size=14)
+# rc('legend', fontsize=14)
+# rc('text', usetex=True)
+# rc('font', size=14)
+# rc('legend', fontsize=14)
 
 class Plotting:
     def __init__(self, cfg):
