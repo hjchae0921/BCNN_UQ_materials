@@ -49,7 +49,7 @@ Key configuration parameters are stored in the `configs` folder, which defines t
 
 > **Note**: Preloaded models should be run on the same device they were trained on to avoid compatibility issues.
 
-## Steps for Using the Fiber Dataset
+## Steps for reproducing the fiber dataset results
 
 1. Download the data and create a `data/data_fiber` folder.
 2. Specify `"fiber"` in the `config.json`.
@@ -58,7 +58,7 @@ Key configuration parameters are stored in the `configs` folder, which defines t
    - `python train_model` for model training
    - `python predict_model` for model predictions using the trained model
    - `python plot_model` to visualize the results
-  These steps can be repeated for Deterministic, MCD, BBB and HMC. MCD and HMC use pretrained models so there is no need to be run from scratch.
+  These steps can be repeated for Deterministic, MCD, BBB. To run the HMC training `train_model_HMC.sh`. Alternatively, the `*.pkl` files can be downloaded from this [link](https://livejohnshopkins.sharepoint.com/:f:/r/sites/JHUDataArchive/Shared%20Documents/ShieldsM_JHRDataRepository_20241031/data?csf=1&web=1&e=CMc09P) and stored in the `trained_models_fiber/case_1`. The MCD and HMC algorithms use pre-trained models before training. For HMC, this helps convergence while for MCD it is used to avoid a redundant training procedure.
 
 ## References
 
