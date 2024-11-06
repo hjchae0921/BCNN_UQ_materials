@@ -1,4 +1,4 @@
-# General Overview
+# Overview
 
 This repository contains scripts for full-field material response prediction and uncertainty quantification (UQ) using Bayesian neural networks. The prediction between the input microstructure and the output stress field is cast as an image-to-image regression problem, utilizing a modified U-net neural network alongside three UQ methods, all of which are derived from the `Unet` base class.
 
@@ -49,8 +49,8 @@ Key configuration parameters are stored in the `configs` folder, which defines t
 
 > **Note**: Preloaded models should be run on the same device they were trained on to avoid compatibility issues.
 
-## Steps for reproducing the fiber dataset results
-
+## Steps for reproducing the results
+### Fiber reinforced composite
 1. Download the data and create a `data/data_fiber` folder.
 2. Specify `"fiber"` in the `config.json`.
 3. Adjust parameters in the configuration files according to the selected method.
@@ -58,7 +58,9 @@ Key configuration parameters are stored in the `configs` folder, which defines t
    - `python train_model` for model training
    - `python predict_model` for model predictions using the trained model
    - `python plot_model` to visualize the results
-  These steps can be repeated for Deterministic, MCD, BBB. To run the HMC training `train_model_HMC.sh`. Alternatively, the `*.pkl` files can be downloaded from this [link](https://livejohnshopkins.sharepoint.com/:f:/r/sites/JHUDataArchive/Shared%20Documents/ShieldsM_JHRDataRepository_20241031/data?csf=1&web=1&e=CMc09P) and stored in the `trained_models_fiber/case_1`. The MCD and HMC algorithms use pre-trained models before training. For HMC, this helps convergence while for MCD it is used to avoid a redundant training procedure.
+  These steps can be repeated for Deterministic, MCD, BBB. To run the HMC training, run `train_model_HMC.sh`. This requires a pre-trained deterministic model to be available. The resulting `*.pkl` files can be downloaded from this [link](https://livejohnshopkins.sharepoint.com/:f:/r/sites/JHUDataArchive/Shared%20Documents/ShieldsM_JHRDataRepository_20241031/data?csf=1&web=1&e=CMc09P) and should be stored in the `trained_models_fiber/case_1`. The MCD can also be run with a pre-trained model directly to perform predictions and plotting.
+### Polycrystalline material system 
+Same procedure as above. Unfortunately, the HMC cannot be run efficiently. All the trained weights are available in `trained_models_polycrystalline_2D/case_1` to reproduce the plots.
 
 ## References
 
