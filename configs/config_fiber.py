@@ -30,8 +30,8 @@ beta_type = 10**(-8)  # 'Blundell', 'Standard', etc. Use float for const value
 num_samples_hmc = 1000  # these are the number of samples from the weights posterior
 # used for the prediction and plots before all the HMC samples have been completed
 num_samples_hmc_pred = 1000
-method = 'Deterministic'  # options: 'Deterministic', 'MCD', 'BBB', 'BBB_LRT', 'HMC'
-device = "cpu"
+method = 'HMC'  # options: 'Deterministic', 'MCD', 'BBB', 'BBB_LRT', 'HMC'
+device = "cpu" # options: 'cuda', 'mps', 'cpu'
 step_size = 0.0005
 L = 300  # number of steps per sample
 tau_out = 10000

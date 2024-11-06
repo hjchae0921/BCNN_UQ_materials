@@ -1632,7 +1632,8 @@ def pred_and_save_output(net, X_batch, Y_batch, ret_params, tau, device, data_pa
     else:
         mse_error = np.zeros((cfg.num_samples_hmc, X_batch.shape[0]))
     # Calcuate test_data error
-    mse_batch = (Y_batch.detach().cpu().numpy() - output) ** 2
+    # mse_batch = (Y_batch.detach().cpu().numpy() - output) ** 2
+    mse_batch = (Y_batch.detach().cpu().numpy() - output.detach().cpu().numpy()) ** 2
     mse_error[i] = mse_batch.mean(axis=(1, 2, 3))
     # Print the error of the current HMC iteration for the first input image 
     print(f"mse_batch: {mse_error[i,0]}")

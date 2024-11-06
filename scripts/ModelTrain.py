@@ -2,7 +2,7 @@ import sys
 sys.path.append("../")
 from utils.utils_process import construct_paths, write_config, load_data, load_test_data, get_filepath, construct_det_path, get_largest_params, get_largest_conv_params,  comp_tau_list
 from HMC_torch import hamiltorch
-from HMC_torch.hamiltorch import util
+from HMC_torch.hamiltorch import util, samplers
 from architectures.u_net import BayesByBackprop, Deterministic, MonteCarloDropout
 from architectures.u_net.layers import metrics
 from enum import Enum
