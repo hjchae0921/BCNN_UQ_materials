@@ -64,7 +64,7 @@ Same procedure as above. Unfortunately, the HMC cannot be run efficiently. All t
 
 ## References
 
-* [Pasparakis, G.D., et al. (2024)](https://arxiv.org/abs/2406.14838)
+* [Pasparakis, G.D., et al. (2024)](https://www.sciencedirect.com/science/article/pii/S0045782524007400)
 * [Shridhar, K., et al. (2019)](https://arxiv.org/abs/1901.02731)
 * [Cobb, A.D., and Jalaian, B. (2021)](https://proceedings.mlr.press/v161/cobb21a.html)
 
