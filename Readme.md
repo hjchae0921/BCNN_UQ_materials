@@ -1,8 +1,8 @@
 # Overview
 
-This repository contains scripts for full-field material response prediction and uncertainty quantification (UQ) using Bayesian neural networks. The prediction between the input microstructure and the output stress field is cast as an image-to-image regression problem, utilizing a modified U-net neural network alongside three UQ methods, all of which are derived from the `Unet` base class.
+This repository contains the scripts for full-field material response prediction and uncertainty quantification (UQ) using Bayesian neural networks. The prediction between the input microstructure and the output stress field is cast as an image-to-image regression problem, utilizing a modified U-net neural network alongside three UQ methods, all of which are derived from the `Unet` base class.
 
-## Implemented Methods
+## Implemented methods
 
 The following methods are supported:
 
@@ -11,7 +11,7 @@ The following methods are supported:
 - **BBB**: BayesByBackprop.
 - **HMC**: Hamiltonian Monte Carlo.
 
-## Main Functions
+## Main functions
 
 The primary functions in the scripts include:
 
@@ -64,6 +64,12 @@ Same procedure as above. Unfortunately, the HMC cannot be run efficiently. All t
 
 ## References
 
-1. Pasparakis, G.D., Graham-Brady, L., and Shields, M.D. (2024). *Bayesian neural networks for predicting uncertainty in full-field material response*. arXiv preprint arXiv:2406.14838.
-2. Shridhar, K., Laumann, F., and Liwicki, M. (2019). *A comprehensive guide to Bayesian convolutional neural networks with variational inference*. arXiv preprint arXiv:1901.02731.
-3. Cobb, A.D., and Jalaian, B. (2021, December). *Scaling Hamiltonian Monte Carlo inference for Bayesian neural networks with symmetric splitting*. In *Uncertainty in Artificial Intelligence* (pp. 675-685). PMLR.
+* [Pasparakis, G.D., et al. (2024)](https://arxiv.org/abs/2406.14838)
+* [Shridhar, K., et al. (2019)](https://arxiv.org/abs/1901.02731)
+* [Cobb, A.D., and Jalaian, B. (2021)](https://proceedings.mlr.press/v161/cobb21a.html)
+
+## Aknowledgements
+The authors gratefully acknowledge Dr. Ashwini Gupta and Indrashish Saha for providing the data and valuable insights regarding the fiber-reinforced composite material.
+
+## Author
+[George Pasparakis](https://scholar.google.com/citations?user=kPANZZQAAAAJ&hl=en)
