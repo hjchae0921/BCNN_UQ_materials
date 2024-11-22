@@ -58,7 +58,7 @@ Key configuration parameters are stored in the `configs` folder, which defines t
    - `python train_model` for model training
    - `python predict_model` for model predictions using the trained model
    - `python plot_model` to visualize the results
-  These steps can be repeated for Deterministic, MCD, BBB. To run the HMC training, run `train_model_HMC.sh`. This requires a pre-trained deterministic model to be available. The resulting `*.pkl` files can be downloaded from this [link](https://livejohnshopkins.sharepoint.com/:f:/r/sites/JHUDataArchive/Shared%20Documents/ShieldsM_JHRDataRepository_20241031/data?csf=1&web=1&e=CMc09P) and should be stored in the `trained_models_fiber/case_1`. The MCD can also be run with a pre-trained model directly to perform predictions and plotting.
+  These steps can be repeated for Deterministic, MCD, BBB. To run the HMC training, run `train_model_HMC.sh`. This requires a pre-trained deterministic model to be available. The resulting `*.pkl` files can be downloaded from this [link](https://doi.org/10.7281/T1GCHQPY) and should be stored in the `trained_models_fiber/case_1`. The MCD can also be run with a pre-trained model directly to perform predictions and plotting.
 ### Polycrystalline material system 
 Same procedure as above. Unfortunately, the HMC cannot be run efficiently. All the trained weights are available in `trained_models_polycrystalline_2D/case_1` to reproduce the plots.
 
