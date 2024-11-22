@@ -26,7 +26,7 @@ This framework has been evaluated with two types of material datasets:
 1. **Fiber Reinforced Composite**
 2. **Polycrystalline Material System**
 
-The datasets can be downloaded from the following [link](https://livejohnshopkins.sharepoint.com/:f:/r/sites/JHUDataArchive/Shared%20Documents/ShieldsM_JHRDataRepository_20241031/data?csf=1&web=1&e=CMc09P). It is recommended to download each dataset separately to avoid large file sizes and potential corruption.
+The datasets can be downloaded from the following [link](https://doi.org/10.7281/T1GCHQPY). It is recommended to download each dataset separately to avoid large file sizes and potential corruption.
 
 ## Configuration Parameters
 
